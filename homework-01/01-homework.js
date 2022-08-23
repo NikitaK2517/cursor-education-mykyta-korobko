@@ -33,7 +33,7 @@ const changePayment = (customerPayment - sumPrice).toFixed(2);
 console.log(`Change after payment 500 UAH: ${changePayment}`);
 
 // rouding 2 elemenst after comma
-const roudingPriceComma = ["First price - " + Math.round((firstPrice) * 100) / 100, "Second price - " + Math.round((secondPrice) * 100) / 100, "Third price - " + Math.round((thirdPrice) * 100) / 100];
+const roudingPriceComma = (sumPrice / 3).toFixed(2);
 console.log(`Rouding all price: ${roudingPriceComma}`);
 
 //random discount
