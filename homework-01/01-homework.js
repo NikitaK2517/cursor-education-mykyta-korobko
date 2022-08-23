@@ -24,8 +24,10 @@ const roudingHundredPrice = Math.floor((roudingTotalPrice) / 100) * 100;
 console.log(`Rouding hundred price: ${roudingHundredPrice}`);
 
 //boolean price
-console.log(`The total price is even: ${Math.floor(roudingTotalPrice) % 2 === 0}`);
-console.log(`The total price is odd: ${Math.floor(roudingTotalPrice) % 2 === 1}`);
+const isTotalPriceEven = Math.floor(roudingTotalPrice) % 2 === 0;
+const isTotalPriceOdd = Math.floor(roudingTotalPrice) % 2 === 1;
+console.log(`The total price is even: ${isTotalPriceEven}`);
+console.log(`The total price is odd: ${isTotalPriceOdd}`);
 
 //change after payment
 const customerPayment = 500;
