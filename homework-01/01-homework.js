@@ -58,8 +58,8 @@ console.log(`
     Rouding all price: ${roudingPrice}
     Rouding total price: ${roudingTotalPrice}
     Rouding hundred price: ${roudingHundredPrice}
-    The total price is even: ${isTotalPriceOdd}
-    The total price is odd: ${isTotalPriceEven}
+    The total price is even: ${isTotalPriceEven}
+    The total price is odd: ${isTotalPriceOdd}
     Change after payment 500 UAH: ${changePayment}
     Rouding all price: ${roudingPriceComma}
     Random discount: ${randomDiscount}
