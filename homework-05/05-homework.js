@@ -6,42 +6,37 @@ function getRandomArray(length, min, max) {
 
 // filter even numbers
 function filterEvenNumbers(...numbers) {
-    let result = numbers.filter(newArr);
-
-    function newArr(item) {
-        return item % 2 === 0;
-    }
-    return result;
+    return numbers.filter(item => item % 2 === 0);
 }
 
 // divided by five
 function getDividedByFive(...numbers) {
-    return numbers.filter((number) => {return number % 5 === 0})
+    return numbers.filter((number) => number % 5 === 0);
 }
 
 // get median of numbers
 function getMedian(...numbers) {
     const middleOfArr = Math.floor(numbers.length / 2);
-    const median = filterIntegers(numbers).sort((a,b) => a - b).reduce((prev, curr, ind, arr) => {
+    const sortedNumbers = filterIntegers(numbers).sort((a,b) => a - b).reduce((prev, curr, ind, arr) => {
+        const firstNumber = arr[middleOfArr - 1];
+        const lastNumber = arr[middleOfArr];
         if (arr.length % 2) {
             return arr[middleOfArr];
         } else {
-            return (arr[middleOfArr - 1] + arr[middleOfArr]) / 2;
+            return (firstNumber + lastNumber) / 2;
         }
     });
-    return median;   
+    return sortedNumbers;
 }
 
 // count positive numbers
 function countPositiveNumbers(...numbers) {
-    return numbers.filter(i => (i > 0)).length;
+    return numbers.filter(i => i > 0).length;
 }
 
 // get average
 function getAverage(...numbers) {
-    let averageValue = numbers.reduce((prevValue, nextValue) => {
-        return prevValue + nextValue
-    }, 0);
+    let averageValue = numbers.reduce((prevValue, nextValue) => prevValue + nextValue, 0);
     return averageValue / numbers.length;
 }
 
