@@ -45,7 +45,6 @@ const getStudentInfo = (obj) => {
   const {course, name} = obj;
   return {course, name, averageMark: getAverageMark(obj)};
 }
-console.log(getStudentInfo(students[1]));
 
 // get student names
 const getStudentNames = (arrOfObj) => arrOfObj.map(obj => obj.name).sort();
